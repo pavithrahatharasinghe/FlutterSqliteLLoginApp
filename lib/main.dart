@@ -99,8 +99,10 @@ class _SignInState extends State<SignIn> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        backgroundColor: Colors.grey[800],
         appBar: AppBar(
-          title: Text('Sign In'),
+          backgroundColor: Colors.grey[700],
+          title: Center(child: Text('Sign In')),
         ),
         body: Center(
           child: Container(
@@ -112,8 +114,10 @@ class _SignInState extends State<SignIn> {
                     height: 40.0,
                     width: double.infinity,
                     child: TextField(
+                      style: TextStyle(color: Colors.white),
                       decoration: new InputDecoration.collapsed(
                         hintText: 'E - mail',
+                        hintStyle: TextStyle(color: Colors.white),
                       ),
                       controller: txtUserEmail,
                     ),
@@ -125,8 +129,10 @@ class _SignInState extends State<SignIn> {
                     height: 40.0,
                     width: double.infinity,
                     child: TextField(
+                      style: TextStyle(color: Colors.white),
                       decoration: new InputDecoration.collapsed(
                         hintText: 'Your Password',
+                        hintStyle: TextStyle(color: Colors.white),
                       ),
                       controller: txtUserPassword,
                     ),
@@ -151,7 +157,7 @@ class _SignInState extends State<SignIn> {
                               textColor: Colors.black,
                               fontSize: 16.0);
 
-                         runApp(employeeHome());
+                          runApp(employeeHome());
                         } else {
                           Fluttertoast.showToast(
                               msg:
@@ -216,9 +222,10 @@ class _SignUpState extends State<SignUp> {
                     height: 40.0,
                     width: double.infinity,
                     child: TextField(
+                      style: TextStyle(color: Colors.white),
                       decoration: new InputDecoration.collapsed(
                         hintText: 'E - mail',
-
+                        hintStyle: TextStyle(color: Colors.white),
                       ),
                       controller: txtUserEmail,
                     ),
@@ -230,8 +237,10 @@ class _SignUpState extends State<SignUp> {
                     height: 40.0,
                     width: double.infinity,
                     child: TextField(
+                      style: TextStyle(color: Colors.white),
                       decoration: new InputDecoration.collapsed(
                         hintText: 'First Name',
+                        hintStyle: TextStyle(color: Colors.white),
                       ),
                       controller: txtUserFName,
                     ),
@@ -243,8 +252,10 @@ class _SignUpState extends State<SignUp> {
                     height: 40.0,
                     width: double.infinity,
                     child: TextField(
+                      style: TextStyle(color: Colors.white),
                       decoration: new InputDecoration.collapsed(
                         hintText: 'Last Name',
+                        hintStyle: TextStyle(color: Colors.white),
                       ),
                       controller: txtUserLName,
                     ),
@@ -256,8 +267,10 @@ class _SignUpState extends State<SignUp> {
                     height: 40.0,
                     width: double.infinity,
                     child: TextField(
+                      style: TextStyle(color: Colors.white),
                       decoration: new InputDecoration.collapsed(
                         hintText: 'NIC No',
+                        hintStyle: TextStyle(color: Colors.white),
                       ),
                       controller: txtUserNIC,
                     ),
@@ -269,8 +282,10 @@ class _SignUpState extends State<SignUp> {
                     height: 40.0,
                     width: double.infinity,
                     child: TextField(
+                      style: TextStyle(color: Colors.white),
                       decoration: new InputDecoration.collapsed(
                         hintText: 'Password',
+                        hintStyle: TextStyle(color: Colors.white),
                       ),
                       controller: txtUserPassword,
                     ),
@@ -282,8 +297,10 @@ class _SignUpState extends State<SignUp> {
                     height: 40.0,
                     width: double.infinity,
                     child: TextField(
+                      style: TextStyle(color: Colors.white),
                       decoration: new InputDecoration.collapsed(
                         hintText: 'ConfirmPassword',
+                        hintStyle: TextStyle(color: Colors.white),
                       ),
                       controller: txtUserConfirmPassword,
                     ),
@@ -313,7 +330,7 @@ class _SignUpState extends State<SignUp> {
                             textColor: Colors.black,
                             fontSize: 16.0);
 
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => employeeHome()));
+                        runApp(employeeHome());
                       },
                       style: TextButton.styleFrom(
                         foregroundColor: Colors.white,
