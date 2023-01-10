@@ -52,7 +52,9 @@ class _firstPageState extends State<firstPage> {
                   height: 40.0,
                   width: double.infinity,
                   child: TextButton(
+
                     onPressed: () => runApp(SignIn()),
+
                     style: TextButton.styleFrom(
                       foregroundColor: Colors.white,
                       backgroundColor: Colors.grey[900],
